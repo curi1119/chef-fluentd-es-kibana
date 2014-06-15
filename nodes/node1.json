@@ -1,0 +1,13 @@
+{
+  "run_list": [
+      "recipe[base]",
+      "recipe[user]",
+      "role[fluentd]",
+      "role[elasticsearch]",
+      "recipe[nginx]",
+      "role[kibana]"
+  ],
+  "automatic": {
+    "ipaddress": "node1"
+  }
+}
